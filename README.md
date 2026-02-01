@@ -24,7 +24,7 @@ we can call a struct in another struct
  eg(p→a) means *p.a
 ### ++
 only moves 1 byte at once\
-++ before a variable will do incriment defore the operation or initialisation and after the variable will be initisized after gaining the value 
+++ before a variable will do incriment defore the operation or initialisation and ++ after the variable will be initisized after gaining the value 
 ### -- 
 works similar to ++ and it's function is to decrease 1 byte 
 ### P+=1 is equal to P= P+1
