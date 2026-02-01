@@ -17,7 +17,7 @@ we can call a struct in another struct
 
 ## Use of different symbols
 ### *
-  eg(*a) value in a , (int* a) this means a is pointer variable 
+  eg( * a  ) value in a , (int* a) this means a is pointer variable 
 ### &
   eg(&b) means address of b
 ### →
@@ -25,6 +25,8 @@ we can call a struct in another struct
 ### ++
 only moves 1 byte at once\ 
 ++ before a variable will do incriment defore the operation or initialisation and after the variable will be initisized after gaining the value 
+### -- 
+works similar to ++ and it's function is to decrease 1 byte 
 
 
 ## How to assign value to variables defined in struct
