@@ -48,9 +48,9 @@ for eg if struct is if size 6 so pointer will move from 1000 to 1006 and then to
 ## Alias name 
 We can name our struct as a single variable by using →type def\
 eg→ type def struct S1 {\
-char a\
-int b\
-}t;
+                char a\
+                int b\
+                }t;
  
 
 
