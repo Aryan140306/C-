@@ -22,6 +22,8 @@ we can call a struct in another struct
   eg(&b) means address of b
 ### →
  eg(p→c) means *p.a
+### ++
+++ before a variable will do incriment defore the operation or initialisation and after the variable will be initisized after gaining the value 
 
 ## How to assign value to variables defined in struct
 * we can not assign value directly in struct so we write valued in(let struct b)\
