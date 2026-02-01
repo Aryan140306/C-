@@ -47,9 +47,9 @@ Pointer will move with the size of struct at once\
 for eg if struct is if size 6 so pointer will move from 1000 to 1006 and then to 1012
 ## Alias name 
 We can name our struct as a single variable by using →type def\
-eg→ type def struct S1 {/
+eg→ type def struct S1 {\
 char a\
-int b/
+int b\
 }t;
  
 
