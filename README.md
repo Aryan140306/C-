@@ -1,9 +1,9 @@
 # C-
 ## Struct
-Help us to create a user defined datatye of different size.\
+Help us to create a user defined datatype of different sizes.\
 We can not give value to any variable in structure \
 we can make array of variable length eg(char ch[6])\
-Indexing starts from zero 
+Indexing starts from zero .
 
 
 ## Size of different data types
