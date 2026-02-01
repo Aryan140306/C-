@@ -27,11 +27,13 @@ we can call a struct in another struct
 *in {}write valued according to data type defined in struct
 
 ## Out out of different data type 
-For output of any datatype we use /
-### %S for output in string\
+For output of any datatype we use 
+### %S for output in string
 eg- print(%s, P[0]i)
 ### %d for integer (int)
+eg- print(%d, P[0]i)
 ### %c for char
+eg- print(%c, P[0]i)
 
 
 
