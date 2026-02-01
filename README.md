@@ -1,7 +1,7 @@
 # C-
 ## Struct
-Help us to create a user defined datatye of different size./
-We can not give value to any variable in structure /
+Help us to create a user defined datatye of different size.\
+We can not give value to any variable in structure \
 we can make array of variable length eg(char ch[6]
 
 ## Size of different data types
