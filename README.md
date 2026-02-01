@@ -21,7 +21,7 @@ we can call a struct in another struct
 ### &
   eg(&b) means address of b
 ### →
- eg(p→c) means *p.a
+ eg(p→a) means *p.a
 ### ++
 only moves 1 byte at once\ 
 ++ before a variable will do incriment defore the operation or initialisation and after the variable will be initisized after gaining the value 
