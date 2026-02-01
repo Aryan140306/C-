@@ -1,13 +1,13 @@
 # C-
 
 # Size of different data types
-int-2 byte
-float-4 byte
-char- 1 byte
+int-2 byte\
+float-4 byte\
+char- 1 byte\
 pointer variable-2 byte
 
 # Nested Structure 
-we can call a structure in another structure 
+we can call a struct in another struct 
 
 # Use of different symbols
 ## *
