@@ -1,6 +1,6 @@
 # C-
 
-/Size of different data types
+\Size of different data types
 int-2 byte
 float-4 byte
 char- 1 byte
