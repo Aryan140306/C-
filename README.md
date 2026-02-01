@@ -1,19 +1,19 @@
 # C-
 
-# Size of different data types
+## Size of different data types
 int-2 byte\
 float-4 byte\
 char- 1 byte\
 pointer variable-2 byte
 
-# Nested Structure 
+## Nested Structure 
 we can call a struct in another struct 
 
-# Use of different symbols
-## *
+## Use of different symbols
+### *
   eg(*a) value in a , (int* a) this means a is pointer variable 
-## &
+### &
   eg(&b) means address of b
-## →
+### →
  eg(p→c) means *p.a
 
