@@ -34,7 +34,7 @@ works similar to ++ and it's function is to decrease 1 byte
 *eg- struct b s1={abc,1 , 1.3 etc.}\
 *in {}write valued according to data type defined in struct
 
-## Out out of different data type 
+## Output of different data type 
 For output of any datatype we use 
 ### %S for output in string
 eg- print(%s, P[0]i)
