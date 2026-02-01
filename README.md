@@ -51,6 +51,9 @@ eg→ type def struct S1 {\
                 char a\
                 int b\
                 }t;
+##Void
+It's return type can be any data type\
+eg→Void f1(t,s) for any function f1 
  
 
 
