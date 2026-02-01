@@ -23,7 +23,9 @@ we can call a struct in another struct
 ### →
  eg(p→c) means *p.a
 ### ++
+only moves 1 byte at once\ 
 ++ before a variable will do incriment defore the operation or initialisation and after the variable will be initisized after gaining the value 
+
 
 ## How to assign value to variables defined in struct
 * we can not assign value directly in struct so we write valued in(let struct b)\
