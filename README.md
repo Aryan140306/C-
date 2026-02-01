@@ -37,7 +37,7 @@ eg- print(%d, P[0]i)
 ### %c for char
 eg- print(%c, P[0]i)
 ## Pointer
-Pointer will move with the size of struct at once /
+Pointer will move with the size of struct at once\
 for eg if struct is if size 6 so pointer will move from 1000 to 1006 and then to 1012
  
 
