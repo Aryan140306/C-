@@ -61,7 +61,7 @@ eg→Void f1(t,s) for any function f1
 in this we pass struct variable in function call\
 By that we work locally on struct and do not change our global struct 
 ## Call by Refrence 
-in this we pass address of struct while function call\ 
+in this we pass address of struct while function call \ 
 by this we will make changes in global struct by bringing change in address .
  
 ## Associativity
