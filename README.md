@@ -27,6 +27,7 @@ only moves 1 byte at once\
 ++ before a variable will do incriment defore the operation or initialisation and after the variable will be initisized after gaining the value 
 ### -- 
 works similar to ++ and it's function is to decrease 1 byte 
+## P+=1 is equal to P= P+1
 
 
 ## How to assign value to variables defined in struct
