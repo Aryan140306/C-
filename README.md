@@ -21,5 +21,8 @@ we can call a struct in another struct
 ### →
  eg(p→c) means *p.a
 
-##
+## How to assign value to variables defined in struct
+we can not assign value directly in struct so we write valued in(let struct b)\
+eg- struct b s1={write values according to data type in struct}
+
 
