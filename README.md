@@ -65,5 +65,6 @@ by this we will make changes in global struct by bringing change in address .
  
 ## Associativity
 Operators with the same precedence are evaluated based on their associativity. Unary operators (++, * , &) have right-to-left associativity, while the binary multiplication operator (*) has left-to-right associativity. 
-
-
+## size of
+this function is used to know size of struct or an element inside struct
+eg- print(%d,size of(s[0]))
