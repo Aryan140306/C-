@@ -26,5 +26,14 @@ we can call a struct in another struct
 *eg- struct b s1={abc,1 , 1.3 etc.}\
 *in {}write valued according to data type defined in struct
 
+## Out out of different data type 
+For output of any datatype we use /
+### %S for output in string\
+eg- print(%s, P[0]i)
+### %d for integer (int)
+### %c for char
+
+
+
 
 
