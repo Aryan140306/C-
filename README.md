@@ -51,7 +51,8 @@ We can name our struct as a single variable by using →type def\
 eg→ type def struct S1 {\
                 char a\
                 int b\
-                }t;
+                }t;\
+now we can call struct S1 by just writing t
 ## Void
 It's return type can be any data type\
 eg→Void f1(t,s) for any function f1 
