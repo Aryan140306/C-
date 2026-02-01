@@ -23,6 +23,6 @@ we can call a struct in another struct
 
 ## How to assign value to variables defined in struct
 we can not assign value directly in struct so we write valued in(let struct b)\
-eg- struct b s1={write values according to data type in struct}
+eg- struct b s1={abc,1 , 1.3 etc.}
 
 
