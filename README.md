@@ -69,3 +69,13 @@ Operators with the same precedence are evaluated based on their associativity. U
 ## size of
 this function is used to know size of struct or an element inside struct
 eg- print(%d,size of(s[0]))
+Write a C++ program to implement a singly linked list using struct for the node and dynamic memory allocation with new and delete. Implement the following operations:
+
+Insertion of a node at the beginning
+
+Insertion of a node at the end
+
+Deletion of a node
+
+Display the entire list
+Use new to allocate memory for each node, and delete to free memory when deleting nodes.
