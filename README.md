@@ -1,4 +1,4 @@
-# C-
+# C and c++
 ## Struct
 Help us to create a user defined datatype of different sizes.\
 We can not give value to any variable in structure \
@@ -282,4 +282,23 @@ int main() {
 
     return 0;
 }
+## 
+Use Case: Tic-Tac-Toe Game with Classes and Object-Oriented Design
 
+Scenario: Develop a Tic-Tac-Toe game using object-oriented design principles. The game should allow two players to take turns, check for a winner, and reset the game.
+
+Tasks:
+
+Create a Game class with a board (a 3x3 matrix), turn (to keep track of whose turn it is), and winner (to determine the winner).
+Implement methods for:
+resetGame(): Resets the board.
+makeMove(): Places a mark on the board.
+checkWinner(): Checks if there is a winner.
+printBoard(): Displays the current state of the board.
+Implement game logic to alternate between players and check if a player wins or if it’s a draw.
+
+Approach:
+
+Classes/Objects: Use a class to encapsulate game-related data and methods.
+Encapsulation: Keep game data (board, winner, turn) private inside the class.
+Polymorphism: You could also extend this with different game modes (e.g., player vs AI).
