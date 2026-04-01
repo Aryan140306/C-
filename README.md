@@ -69,4 +69,94 @@ Operators with the same precedence are evaluated based on their associativity. U
 ## size of
 this function is used to know size of struct or an element inside struct
 eg- print(%d,size of(s[0]))
+# C++ questions
+
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+class Student {
+private:
+    int rollno;
+    string name;
+    vector<float> marks;
+
+public:
+    // Default constructor
+    Student() {
+        rollno = 0;
+        name = "Unknown";
+    }
+
+    // Constructor with roll number, name, and marks
+    Student(int r, string n, vector<float> m) {
+        rollno = r;
+        name = n;
+        marks = m;
+    }
+
+    // Constructor with roll number only
+    Student(int r) {
+        rollno = r;
+        name = "Not Assigned";
+    }
+
+    // Destructor
+    ~Student() {
+        cout << "Destructor called for roll no: " << rollno << endl;
+    }
+
+    // Method to add student details
+    void addStudent() {
+        cout << "Enter student details (roll no, name, number of subjects): ";
+        int subjects;
+        cin >> rollno >> name >> subjects;
+        marks.clear();
+        cout << "Enter marks: ";
+        for (int i = 0; i < subjects; i++) {
+            float m;
+            cin >> m;
+            marks.push_back(m);
+        }
+    }
+
+    // Modify student details
+    void modifyStudent(string newName, vector<float> newMarks) {
+        name = newName;
+        marks = newMarks;
+    }
+
+    // Display student details
+    void displayStudent() {
+        cout << "Roll No: " << rollno << endl;
+        cout << "Name: " << name << endl;
+        cout << "Marks: ";
+        for (float m : marks) cout << m << " ";
+        cout << endl;
+        cout << "Average: " << calculateAverage() << endl;
+    }
+
+    // Calculate average marks
+    float calculateAverage() {
+        if (marks.empty()) return 0;
+        float sum = 0;
+        for (float m : marks) sum += m;
+        return sum / marks.size();
+    }
+};
+
+int main() {
+    Student s1;
+    s1.addStudent();
+    s1.displayStudent();
+
+    vector<float> newMarks = {90, 85, 88};
+    s1.modifyStudent("Updated Name", newMarks);
+    cout << "\nAfter modification:\n";
+    s1.displayStudent();
+
+    return 0;
+}
+
 
