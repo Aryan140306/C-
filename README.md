@@ -188,6 +188,47 @@ File Handling: Use ifstream to read the employee data and ofstream to write the 
 Object-Oriented Design: Use a class to represent employees and encapsulate their data.
 Exception Handling: Implement error checking to ensure the file exists and is accessible.
 
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+using namespace std;
+
+class Employee {
+private:
+    int employee_id;
+    string name;
+    float basic_salary;
+    float bonus;
+    float deductions;
+    float net_salary;
+
+public:
+    // Constructor
+    Employee(int id, string n, float basic, float b, float d) {
+        employee_id = id;
+        name = n;
+        basic_salary = basic;
+        bonus = b;
+        deductions = d;
+        net_salary = 0;
+    }
+
+    // Calculate salary
+    void calculateSalary() {
+        net_salary = basic_salary + bonus - deductions;
+    }
+
+    // Display employee details
+    void displayEmployee() {
+        cout << "ID: " << employee_id << ", Name: " << name
+             << ", Net Salary: " << net_salary << endl;
+    }
+
+    // Write employee data to file
+    void writeToFile(ofstream &outFile) {
+
+
 
 
 
