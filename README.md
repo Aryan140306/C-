@@ -169,7 +169,7 @@ int main() {
 
     return 0;
 }
-Use Case : Employee Salary Management System Using File Handling
+##Use Case : Employee Salary Management System Using File Handling
 
 Scenario: You need to build an employee salary management system that reads employee records from a file, calculates their salary, and writes the updated data back to the file.
 
@@ -227,10 +227,59 @@ public:
 
     // Write employee data to file
     void writeToFile(ofstream &outFile) {
+        outFile << employee_id << " " << name << " "
+                << basic_salary << " " << bonus << " "
+                << deductions << " " << net_salary << endl;
+    }
+};
 
+// Function to load employees from file
+vector<Employee> loadEmployees(string filename) {
+    ifstream inFile(filename);
+    vector<Employee> employees;
 
+    if (!inFile) {
+        cerr << "Error: Could not open file " << filename << endl;
+        return employees;
+    }
 
+    int id;
+    string name;
+    float basic, bonus, deductions;
 
+    while (inFile >> id >> name >> basic >> bonus >> deductions) {
+        Employee emp(id, name, basic, bonus, deductions);
+        employees.push_back(emp);
+    }
 
+    inFile.close();
+    return employees;
+}
 
+int main() {
+    // Load employees from file
+    vector<Employee> employees = loadEmployees("employees.txt");
+
+    // Calculate salary for each employee
+    for (auto &emp : employees) {
+        emp.calculateSalary();
+        emp.displayEmployee();
+    }
+
+    // Write updated records to new file
+    ofstream outFile("updated_employees.txt");
+    if (!outFile) {
+        cerr << "Error: Could not open output file." << endl;
+        return 1;
+    }
+
+    for (auto &emp : employees) {
+        emp.writeToFile(outFile);
+    }
+
+    outFile.close();
+    cout << "\nUpdated employee records written to updated_employees.txt" << endl;
+
+    return 0;
+}
 
