@@ -302,3 +302,114 @@ Approach:
 Classes/Objects: Use a class to encapsulate game-related data and methods.
 Encapsulation: Keep game data (board, winner, turn) private inside the class.
 Polymorphism: You could also extend this with different game modes (e.g., player vs AI).
+
+#include <iostream>
+using namespace std;
+
+class Game {
+private:
+    char board[3][3];
+    char turn;
+    char winner;
+
+public:
+    // Constructor
+    Game() {
+        resetGame();
+    }
+
+    // Reset the game
+    void resetGame() {
+        for (int i = 0; i < 3; i++)
+            for (int j = 0; j < 3; j++)
+                board[i][j] = ' ';
+        turn = 'X';   // X always starts
+        winner = ' ';
+    }
+
+    // Print the board
+    void printBoard() {
+        cout << "\n";
+        for (int i = 0; i < 3; i++) {
+            cout << " ";
+            for (int j = 0; j < 3; j++) {
+                cout << board[i][j];
+                if (j < 2) cout << " | ";
+            }
+            cout << "\n";
+            if (i < 2) cout << "---+---+---\n";
+        }
+        cout << "\n";
+    }
+
+    // Make a move
+    bool makeMove(int row, int col) {
+        if (row < 0 || row >= 3 || col < 0 || col >= 3) {
+            cout << "Invalid move! Try again.\n";
+            return false;
+        }
+        if (board[row][col] != ' ') {
+            cout << "Cell already occupied! Try again.\n";
+            return false;
+        }
+        board[row][col] = turn;
+        checkWinner();
+        turn = (turn == 'X') ? 'O' : 'X'; // alternate turn
+        return true;
+    }
+
+    // Check for winner or draw
+    void checkWinner() {
+        // Check rows and columns
+        for (int i = 0; i < 3; i++) {
+            if (board[i][0] != ' ' && board[i][0] == board[i][1] && board[i][1] == board[i][2])
+                winner = board[i][0];
+            if (board[0][i] != ' ' && board[0][i] == board[1][i] && board[1][i] == board[2][i])
+                winner = board[0][i];
+        }
+        // Check diagonals
+        if (board[0][0] != ' ' && board[0][0] == board[1][1] && board[1][1] == board[2][2])
+            winner = board[0][0];
+        if (board[0][2] != ' ' && board[0][2] == board[1][1] && board[1][1] == board[2][0])
+            winner = board[0][2];
+    }
+
+    // Get winner
+    char getWinner() {
+        return winner;
+    }
+
+    // Check if board is full (draw)
+    bool isDraw() {
+        if (winner != ' ') return false;
+        for (int i = 0; i < 3; i++)
+            for (int j = 0; j < 3; j++)
+                if (board[i][j] == ' ')
+                    return false;
+        return true;
+    }
+};
+
+int main() {
+    Game game;
+    int row, col;
+
+    cout << "Welcome to Tic-Tac-Toe!\n";
+    game.printBoard();
+
+    while (game.getWinner() == ' ' && !game.isDraw()) {
+        cout << "Player " << (game.getWinner() == ' ' ? (game.isDraw() ? ' ' : game.getWinner()) : 'X') << "'s turn.\n";
+        cout << "Enter row and column (0-2): ";
+        cin >> row >> col;
+        game.makeMove(row, col);
+        game.printBoard();
+    }
+
+    if (game.getWinner() != ' ')
+        cout << "Player " << game.getWinner() << " wins!\n";
+    else
+        cout << "It's a draw!\n";
+
+    return 0;
+}
+
