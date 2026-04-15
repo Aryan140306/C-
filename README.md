@@ -81,7 +81,7 @@ Class Design: Create a Student class with data members like roll_number, name, a
 Approach:
 
 Class and objects: Use a class to represent the student, encapsulating the details of each student. Inheritance: You could extend this to have subclasses like GraduateStudent or UndergraduateStudent, which inherit from Student and add more specialized data. Polymorphism: Use method overloading for various operations like addStudent() (with different types of arguments).
-
+```cpp
 #include <iostream>
 #include <vector>
 #include <string>
@@ -169,6 +169,7 @@ int main() {
 
     return 0;
 }
+```
 ##Use Case : Employee Salary Management System Using File Handling
 
 Scenario: You need to build an employee salary management system that reads employee records from a file, calculates their salary, and writes the updated data back to the file.
