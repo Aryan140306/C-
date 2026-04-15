@@ -188,7 +188,7 @@ Approach:
 File Handling: Use ifstream to read the employee data and ofstream to write the data back after processing.
 Object-Oriented Design: Use a class to represent employees and encapsulate their data.
 Exception Handling: Implement error checking to ensure the file exists and is accessible.
-
+```cpp
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -283,6 +283,7 @@ int main() {
 
     return 0;
 }
+```
 ## 
 Use Case: Tic-Tac-Toe Game with Classes and Object-Oriented Design
 
@@ -303,7 +304,7 @@ Approach:
 Classes/Objects: Use a class to encapsulate game-related data and methods.
 Encapsulation: Keep game data (board, winner, turn) private inside the class.
 Polymorphism: You could also extend this with different game modes (e.g., player vs AI).
-
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -413,4 +414,4 @@ int main() {
 
     return 0;
 }
-
+```
